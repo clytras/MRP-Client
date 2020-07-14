@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components": ["./components"],
+      "@screens": ["./screens"],
+      "@panels": ["./screens/panels"],
+      "@utils": ["./utils"],
+      "@lang": ["./lang"],
+      "@data": ["./data"],
+      "@assets": ["./assets"],
+      "@app": ["./"],
+      "@mrplib": ["../MrPengu-Library"]
+    }
+  }
+}

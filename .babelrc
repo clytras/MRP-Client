@@ -1,0 +1,33 @@
+{
+  "presets": ["module:metro-react-native-babel-preset"],
+  "env": {
+    "production": {
+      "plugins": ["transform-remove-console", "react-native-paper/babel"]
+    }
+  },
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    [
+      "module-resolver-image",
+      {
+        "root": ["./"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "stripExtensions": [".js", ".jsx", ".ts", ".tsx"],
+        "alias": {
+          "@components": "./components",
+          "@screens": "./screens",
+          "@panels": "./screens/panels",
+          "@utils": "./utils",
+          "@lang": "./lang",
+          "@data": "./data",
+          "@assets": "./assets",
+          "@jsassets": "./jsassets",
+          "@app": "./",
+          "@mrplib": "../MrPengu-Library",
+          "@mrpi18n": "../MrPengu-Library/i18n/rn",
+          "@mrpbrain": "../MrPengu-Brain/firebase/functions",
+        }
+      }
+    ]
+  ]
+}
